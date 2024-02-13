@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, table, 
+th, td, tr, textarea, button, form {
+    margin: 0px;
+    padding: 0px; 
+}
+
+.clearfix::after {clear: both}
+
+ol, ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: #eeeff5;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+.content {
+    width: 700px;
+    background-color: #ffffff;
+}
+
+/*타이틀*/
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.content .form-text{
+    display: inline-block;
+    width: 80px;
+    text-align: left;          
+}
+
+ol{
+    margin: 20px 0px 50px 0px;
+}
+
+ol>li{
+    float: left;
+}
+
+ol>li::after {
+    content: " >";
+}
+
+ol>li:last-child::after {
+    content: "";
+}
+
+/*폼그룹*/
+.form-group {
+    padding: 10px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #000000;
+}
+
+
+/* 폼타이틀 */
+.content .form-group .form-text{
+    display: inline-block;
+    width: 100px;
+    text-align: center; 
+}
+
+/*폼 라디오 버튼*/
+.content .form-group input[type="radio"]{
+    margin-right: 10px;
+}
+
+/*폼 체크박스*/
+.content .form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/*내용*/
+.content .form-group #txt-content {
+    width: 450px;
+    height: 80px;
+}
+
+/*버튼영역*/
+.content .btn-area {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.content .btn-area button{
+    width: 90px;
+    height: 40px;
+}
+
+/*주소*/
+.content .form-group #txt-adress2 {
+   margin-top: 5px;
+   margin-left: 104px;
+   width: 450px;
+}
+
+.content .form-group #search {
+    width: 100px;
+}
+
+.content .form-group span.form-text[for="self"] {
+    display: inline-block;
+    vertical-align: top;
+}
